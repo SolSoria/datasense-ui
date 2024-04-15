@@ -35,7 +35,7 @@ function OAuth2(props) {
       return;
     } else {
       axios
-        .post("http://datasense-project.com/auth/login/google", { code: code })
+        .post("http://localhost:8081/login/google", { code: code })
         .then((response) => {
           const token = response.data.token;
           //decode token
